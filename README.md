@@ -210,21 +210,3 @@ hw4-starter-agent/
 └── outputs/                        # Run outputs and eval summaries
 ```
 
----
-
-## Grading Rubric
-
-| Part | Criterion | Points |
-|------|-----------|--------|
-| **A — Retrieval** | Implemented one valid retrieval extension beyond keyword overlap | 20 |
-| | Citations are valid KB filenames | 5 |
-| | Brief explanation of design choice in report | 5 |
-| **B — Reasoning** | Implemented one valid reasoning/control extension | 20 |
-| | Reasoning artifact (plan/decision) is visible and coherent | 5 |
-| | Brief explanation of design choice in report | 5 |
-| **C — Evaluation** | Implemented one valid evaluation extension | 20 |
-| | Numeric scores reported; interpretation included in report | 5 |
-| | Brief explanation of design choice in report | 5 |
-| **Code quality** | Modular, readable, runnable; no crashes on edge cases | 5 |
-| **Report** | 1–2 pages; covers what/why/what-you-observed; includes example runs | 5 |
-| **Total** | | **100** |
