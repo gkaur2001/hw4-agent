@@ -1,0 +1,298 @@
+{
+  "summary": {
+    "n_items": 15,
+    "n_completed": 15,
+    "mean_citation_recall": 1.0,
+    "mean_keyword_hit_rate": 0.5111,
+    "mean_groundedness_score": 0.9667,
+    "mean_citation_coverage": 1.0,
+    "mean_tool_use_score": 1.0
+  },
+  "results": [
+    {
+      "id": "q01",
+      "question": "Can I submit homework late?",
+      "answer_snippet": "You can submit homework late, but you will receive a deduction based on the number of hours late. For example, if you ea",
+      "expected_citations": [
+        "policy_late_work.md"
+      ],
+      "actual_citations": [
+        "policy_late_work.md",
+        "policy_late_work.md",
+        "policy_late_work.md"
+      ],
+      "citation_recall": 1.0,
+      "keyword_hit_rate": 0.667,
+      "groundedness_score": 1.0,
+      "citation_coverage": 1.0,
+      "tool_use_score": 1.0,
+      "eval_notes": "ok"
+    },
+    {
+      "id": "q02",
+      "question": "What is the penalty for submitting an assignment 36 hours late?",
+      "answer_snippet": "The penalty for submitting an assignment 36 hours late is **50% deduction** from the earned score.\nSources: policy_late_",
+      "expected_citations": [
+        "policy_late_work.md"
+      ],
+      "actual_citations": [
+        "policy_late_work.md",
+        "policy_late_work.md",
+        "policy_late_work.md"
+      ],
+      "citation_recall": 1.0,
+      "keyword_hit_rate": 0.5,
+      "groundedness_score": 0.5,
+      "citation_coverage": 1.0,
+      "tool_use_score": 1.0,
+      "eval_notes": "answer contains numbers/dates not found in context"
+    },
+    {
+      "id": "q03",
+      "question": "Is there a grace period for deadlines?",
+      "answer_snippet": "There is no explicit grace period mentioned in the provided context. Extensions are granted within a specified timeframe",
+      "expected_citations": [
+        "policy_late_work.md"
+      ],
+      "actual_citations": [
+        "policy_late_work.md",
+        "policy_extensions.md",
+        "policy_extensions.md"
+      ],
+      "citation_recall": 1.0,
+      "keyword_hit_rate": 0.5,
+      "groundedness_score": 1.0,
+      "citation_coverage": 1.0,
+      "tool_use_score": 1.0,
+      "eval_notes": "ok"
+    },
+    {
+      "id": "q04",
+      "question": "How do I request a deadline extension?",
+      "answer_snippet": "To request a deadline extension, email your instructor at least 48-72 hours before the original deadline. Use the subjec",
+      "expected_citations": [
+        "policy_extensions.md"
+      ],
+      "actual_citations": [
+        "policy_extensions.md",
+        "policy_extensions.md",
+        "policy_extensions.md"
+      ],
+      "citation_recall": 1.0,
+      "keyword_hit_rate": 0.667,
+      "groundedness_score": 1.0,
+      "citation_coverage": 1.0,
+      "tool_use_score": 1.0,
+      "eval_notes": "ok"
+    },
+    {
+      "id": "q05",
+      "question": "Can I get an extension after the deadline has passed?",
+      "answer_snippet": "You can request an extension after the deadline has passed. You must email your instructor at least 24 hours before the ",
+      "expected_citations": [
+        "policy_extensions.md"
+      ],
+      "actual_citations": [
+        "policy_extensions.md",
+        "policy_extensions.md",
+        "policy_extensions.md"
+      ],
+      "citation_recall": 1.0,
+      "keyword_hit_rate": 0.0,
+      "groundedness_score": 1.0,
+      "citation_coverage": 1.0,
+      "tool_use_score": 1.0,
+      "eval_notes": "ok"
+    },
+    {
+      "id": "q06",
+      "question": "What qualifies as a reason for an extension?",
+      "answer_snippet": "## Requesting an Extension\nTo request a deadline extension, you must provide a valid reason. According to the context, e",
+      "expected_citations": [
+        "policy_extensions.md"
+      ],
+      "actual_citations": [
+        "policy_extensions.md",
+        "policy_extensions.md",
+        "policy_extensions.md"
+      ],
+      "citation_recall": 1.0,
+      "keyword_hit_rate": 0.333,
+      "groundedness_score": 1.0,
+      "citation_coverage": 1.0,
+      "tool_use_score": 1.0,
+      "eval_notes": "ok"
+    },
+    {
+      "id": "q07",
+      "question": "Can I use ChatGPT for my homework?",
+      "answer_snippet": "You can use ChatGPT for your homework as long as you disclose its use in a brief note at the end of your submission.\nSou",
+      "expected_citations": [
+        "policy_academic_integrity.md"
+      ],
+      "actual_citations": [
+        "policy_academic_integrity.md",
+        "policy_academic_integrity.md",
+        "it_canvas_access.md"
+      ],
+      "citation_recall": 1.0,
+      "keyword_hit_rate": 0.333,
+      "groundedness_score": 1.0,
+      "citation_coverage": 1.0,
+      "tool_use_score": 1.0,
+      "eval_notes": "ok"
+    },
+    {
+      "id": "q08",
+      "question": "What happens if I copy code from the internet?",
+      "answer_snippet": "Since you asked about copying code from the internet, I will provide information on what happens in this scenario. \n\nAcc",
+      "expected_citations": [
+        "policy_academic_integrity.md"
+      ],
+      "actual_citations": [
+        "policy_academic_integrity.md",
+        "policy_academic_integrity.md",
+        "policy_late_work.md"
+      ],
+      "citation_recall": 1.0,
+      "keyword_hit_rate": 0.667,
+      "groundedness_score": 1.0,
+      "citation_coverage": 1.0,
+      "tool_use_score": 1.0,
+      "eval_notes": "ok"
+    },
+    {
+      "id": "q09",
+      "question": "Can I work with a classmate on homework?",
+      "answer_snippet": "You can work with a classmate on homework, but consider the policy on group projects and individual assignments. Review ",
+      "expected_citations": [
+        "policy_academic_integrity.md"
+      ],
+      "actual_citations": [
+        "policy_academic_integrity.md",
+        "policy_late_work.md",
+        "policy_academic_integrity.md"
+      ],
+      "citation_recall": 1.0,
+      "keyword_hit_rate": 0.333,
+      "groundedness_score": 1.0,
+      "citation_coverage": 1.0,
+      "tool_use_score": 1.0,
+      "eval_notes": "ok"
+    },
+    {
+      "id": "q10",
+      "question": "How do I install the VPN?",
+      "answer_snippet": "To install the VPN, follow these steps:\n\n1. Go to https://my.jh.edu and log in with your JHED ID.\n2. Navigate to IT Down",
+      "expected_citations": [
+        "it_vpn_access.md"
+      ],
+      "actual_citations": [
+        "it_vpn_access.md",
+        "it_vpn_access.md",
+        "it_vpn_access.md"
+      ],
+      "citation_recall": 1.0,
+      "keyword_hit_rate": 1.0,
+      "groundedness_score": 1.0,
+      "citation_coverage": 1.0,
+      "tool_use_score": 1.0,
+      "eval_notes": "ok"
+    },
+    {
+      "id": "q11",
+      "question": "What should I do if my VPN won't connect?",
+      "answer_snippet": "If your VPN won't connect, try restarting your router. Check your internet connection status and ensure that the VPN ser",
+      "expected_citations": [
+        "it_vpn_access.md"
+      ],
+      "actual_citations": [
+        "it_vpn_access.md",
+        "it_vpn_access.md",
+        "it_vpn_access.md"
+      ],
+      "citation_recall": 1.0,
+      "keyword_hit_rate": 0.333,
+      "groundedness_score": 1.0,
+      "citation_coverage": 1.0,
+      "tool_use_score": 1.0,
+      "eval_notes": "ok"
+    },
+    {
+      "id": "q12",
+      "question": "How do I access Canvas?",
+      "answer_snippet": "To access Canvas, you can follow these steps:\n\n- Go to https://canvas.jhu.edu\n- Log in with your JHED ID and password\n- ",
+      "expected_citations": [
+        "it_canvas_access.md"
+      ],
+      "actual_citations": [
+        "it_canvas_access.md",
+        "it_canvas_access.md",
+        "it_canvas_access.md"
+      ],
+      "citation_recall": 1.0,
+      "keyword_hit_rate": 0.667,
+      "groundedness_score": 1.0,
+      "citation_coverage": 1.0,
+      "tool_use_score": 1.0,
+      "eval_notes": "ok"
+    },
+    {
+      "id": "q13",
+      "question": "My course is not showing up in Canvas, what should I do?",
+      "answer_snippet": "Your course is not showing up in Canvas because it took up to 24 hours for new enrollments to appear. To confirm your en",
+      "expected_citations": [
+        "it_canvas_access.md"
+      ],
+      "actual_citations": [
+        "it_canvas_access.md",
+        "it_canvas_access.md",
+        "policy_late_work.md"
+      ],
+      "citation_recall": 1.0,
+      "keyword_hit_rate": 1.0,
+      "groundedness_score": 1.0,
+      "citation_coverage": 1.0,
+      "tool_use_score": 1.0,
+      "eval_notes": "ok"
+    },
+    {
+      "id": "q14",
+      "question": "What is the penalty for submitting work more than 7 days late?",
+      "answer_snippet": "Submissions more than 7 days late are not accepted. Sources: policy_late_work.md\nSources: policy_late_work.md, policy_la",
+      "expected_citations": [
+        "policy_late_work.md"
+      ],
+      "actual_citations": [
+        "policy_late_work.md",
+        "policy_late_work.md",
+        "policy_late_work.md"
+      ],
+      "citation_recall": 1.0,
+      "keyword_hit_rate": 0.667,
+      "groundedness_score": 1.0,
+      "citation_coverage": 1.0,
+      "tool_use_score": 1.0,
+      "eval_notes": "ok"
+    },
+    {
+      "id": "q15",
+      "question": "Who should I contact about a VPN problem?",
+      "answer_snippet": "You should contact IT Support about a VPN problem.\nSources: it_vpn_access.md, it_vpn_access.md, it_vpn_access.md",
+      "expected_citations": [
+        "it_vpn_access.md"
+      ],
+      "actual_citations": [
+        "it_vpn_access.md",
+        "it_vpn_access.md",
+        "it_vpn_access.md"
+      ],
+      "citation_recall": 1.0,
+      "keyword_hit_rate": 0.0,
+      "groundedness_score": 1.0,
+      "citation_coverage": 1.0,
+      "tool_use_score": 1.0,
+      "eval_notes": "ok"
+    }
+  ]
+}

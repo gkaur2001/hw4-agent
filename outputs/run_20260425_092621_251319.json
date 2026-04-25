@@ -1,0 +1,40 @@
+{
+  "question": "Can I work with a classmate on homework?",
+  "final_answer": "You can work with a classmate on homework, but consider the policy on group projects and individual assignments. Review the due date for each assignment to ensure timely submission.\nSources: policy_academic_integrity.md, policy_late_work.md, policy_academic_integrity.md",
+  "citations": [
+    "policy_academic_integrity.md",
+    "policy_late_work.md",
+    "policy_academic_integrity.md"
+  ],
+  "reasoning_trace": {
+    "plan": [
+      "Can I work with a classmate on homework?",
+      "Consider the policy on group projects and individual assignments.",
+      "Review the due date for each assignment to ensure timely submission."
+    ],
+    "assumptions": [
+      "The retrieved context contains the necessary information"
+    ],
+    "tool_calls": [
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "Can I work with a classmate on homework?"
+        },
+        "result_summary": "retrieved 3 doc(s): ['policy_academic_integrity.md', 'policy_late_work.md', 'policy_academic_integrity.md']"
+      }
+    ],
+    "decision": "It is generally not recommended to work with a classmate on homework unless specifically allowed by the instructor, as it may be considered academic dishonesty. However, if group projects are permitted and you have discussed them with your instructor, you can collaborate within your group."
+  },
+  "eval_report": {
+    "groundedness_score": 1.0,
+    "citation_coverage": 1.0,
+    "tool_use_score": 1.0,
+    "notes": "ok"
+  },
+  "run_meta": {
+    "model": "llama3.2:1b",
+    "latency_ms": 2476,
+    "tokens_estimate": null
+  }
+}

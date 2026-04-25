@@ -1,0 +1,40 @@
+{
+  "question": "How do I request a deadline extension?",
+  "final_answer": "Could you please provide more details about what you're looking for?",
+  "citations": [
+    "policy_extensions.md",
+    "policy_extensions.md",
+    "policy_extensions.md"
+  ],
+  "reasoning_trace": {
+    "plan": [
+      "request a deadline extension",
+      "submit email with proposed new deadline and documentation",
+      "instructor reviews request and grants approval"
+    ],
+    "assumptions": [
+      "The retrieved context contains the necessary information"
+    ],
+    "tool_calls": [
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "How do I request a deadline extension?"
+        },
+        "result_summary": "retrieved 3 doc(s): ['policy_extensions.md', 'policy_extensions.md', 'policy_extensions.md']"
+      }
+    ],
+    "decision": "Request an extension by submitting a formal email to the instructor within 48-72 hours of the original deadline."
+  },
+  "eval_report": {
+    "groundedness_score": 1.0,
+    "citation_coverage": 0.5,
+    "tool_use_score": 1.0,
+    "notes": "ok"
+  },
+  "run_meta": {
+    "model": "llama3.2:1b",
+    "latency_ms": 1455,
+    "tokens_estimate": null
+  }
+}

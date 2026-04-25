@@ -1,0 +1,38 @@
+{
+  "question": "Can I submit homework late?",
+  "final_answer": "Could you please provide more details about what you're looking for?",
+  "citations": [
+    "policy_late_work.md",
+    "policy_late_work.md",
+    "policy_late_work.md"
+  ],
+  "reasoning_trace": {
+    "plan": [
+      "Can I submit homework late?"
+    ],
+    "assumptions": [
+      "The retrieved context contains the necessary information"
+    ],
+    "tool_calls": [
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "Can I submit homework late?"
+        },
+        "result_summary": "retrieved 3 doc(s): ['policy_late_work.md', 'policy_late_work.md', 'policy_late_work.md']"
+      }
+    ],
+    "decision": "Late submissions are not accepted."
+  },
+  "eval_report": {
+    "groundedness_score": 1.0,
+    "citation_coverage": 0.5,
+    "tool_use_score": 1.0,
+    "notes": "ok"
+  },
+  "run_meta": {
+    "model": "llama3.2:1b",
+    "latency_ms": 5669,
+    "tokens_estimate": null
+  }
+}

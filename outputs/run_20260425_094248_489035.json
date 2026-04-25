@@ -1,0 +1,88 @@
+{
+  "question": "Can I submit homework late?",
+  "final_answer": "You can submit homework late, but you will receive a deduction based on the number of hours late. For example, if you earn 90/100 and submitted 30 hours late, you would receive 90 × 0.75 = 67.5 points for the accepted work. Submissions more than 7 days late are not accepted.\nSources: policy_late_work.md",
+  "citations": [
+    "policy_late_work.md"
+  ],
+  "reasoning_trace": {
+    "plan": [
+      "Can I submit homework late?",
+      "Late work that is accepted will be graded normally, then the deduction will be applied. For example, if you earn 90/100 but submitted 30 hours late, you receive 90 × 0.75 = 67.5 points.",
+      "Submissions 1–24 hours late: **10% deduction** from the earned score.",
+      "Submissions 25–48 hours late: **25% deduction** from the earned score.",
+      "Submissions more than 48 hours late: **50% deduction** from the earned score.",
+      "Submissions more than 7 days late: **not accepted** (grade of 0.)"
+    ],
+    "assumptions": [
+      "Can I submit homework late?"
+    ],
+    "tool_calls": [
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "Can I submit homework late?"
+        },
+        "result_summary": "retrieved 3 doc(s): ['policy_late_work.md', 'policy_late_work.md', 'policy_late_work.md']"
+      },
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "Can I submit homework late?"
+        },
+        "result_summary": "step 'Can I submit homework late?': 0 new chunk(s) from []"
+      },
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "Late work that is accepted will be graded normally, then the deduction will be applied. For example, if you earn 90/100 but submitted 30 hours late, you receive 90 × 0.75 = 67.5 points."
+        },
+        "result_summary": "step 'Late work that is accepted will be graded normally': 0 new chunk(s) from []"
+      },
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "Submissions 1–24 hours late: **10% deduction** from the earned score."
+        },
+        "result_summary": "step 'Submissions 1–24 hours late: **10% deduction** fro': 0 new chunk(s) from []"
+      },
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "Submissions 25–48 hours late: **25% deduction** from the earned score."
+        },
+        "result_summary": "step 'Submissions 25–48 hours late: **25% deduction** fr': 0 new chunk(s) from []"
+      },
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "Submissions more than 48 hours late: **50% deduction** from the earned score."
+        },
+        "result_summary": "step 'Submissions more than 48 hours late: **50% deducti': 0 new chunk(s) from []"
+      },
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "Submissions more than 7 days late: **not accepted** (grade of 0.)"
+        },
+        "result_summary": "step 'Submissions more than 7 days late: **not accepted*': 0 new chunk(s) from []"
+      }
+    ],
+    "decision": "Late submissions are not accepted, as they do not meet the expected due date and will result in a deduction from the earned score."
+  },
+  "eval_report": {
+    "groundedness_score": 1.0,
+    "citation_coverage": 1.0,
+    "tool_use_score": 1.0,
+    "notes": "ok",
+    "llm_judge_factuality": 0.6,
+    "llm_judge_relevance": 0.8,
+    "llm_judge_citation": 0.4,
+    "llm_judge_overall": 0.6,
+    "llm_judge_reasoning": "The assistant's answer is partially correct, but lacks specific examples and citations to support the claim that submissions more than 7 days late are not accepted. The context provided in the policy_late_work.md file supports this claim, but the assistant does not fully address it."
+  },
+  "run_meta": {
+    "model": "llama3.2:1b",
+    "latency_ms": 9372,
+    "tokens_estimate": null
+  }
+}

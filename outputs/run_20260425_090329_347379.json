@@ -1,0 +1,40 @@
+{
+  "question": "How do I access Canvas?",
+  "final_answer": "Could you please provide more details about what you're looking for?",
+  "citations": [
+    "it_canvas_access.md",
+    "it_canvas_access.md",
+    "it_canvas_access.md"
+  ],
+  "reasoning_trace": {
+    "plan": [
+      "access Canvas",
+      "log in to Canvas",
+      "set up DUO"
+    ],
+    "assumptions": [
+      "does the user have a JHED ID and password?"
+    ],
+    "tool_calls": [
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "How do I access Canvas?"
+        },
+        "result_summary": "retrieved 3 doc(s): ['it_canvas_access.md', 'it_canvas_access.md', 'it_canvas_access.md']"
+      }
+    ],
+    "decision": "You must log in to your Canvas account using your JHED ID and password."
+  },
+  "eval_report": {
+    "groundedness_score": 1.0,
+    "citation_coverage": 0.5,
+    "tool_use_score": 1.0,
+    "notes": "ok"
+  },
+  "run_meta": {
+    "model": "llama3.2:1b",
+    "latency_ms": 1467,
+    "tokens_estimate": null
+  }
+}

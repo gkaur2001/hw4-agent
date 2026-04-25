@@ -1,0 +1,39 @@
+{
+  "question": "What is the penalty for submitting work more than 7 days late?",
+  "final_answer": "Could you please provide more details about what you're looking for?",
+  "citations": [
+    "policy_late_work.md",
+    "policy_late_work.md",
+    "policy_late_work.md"
+  ],
+  "reasoning_trace": {
+    "plan": [
+      "submitting work more than 7 days late",
+      "submitting work more than 48 hours late"
+    ],
+    "assumptions": [
+      "submissions more than 7 days late"
+    ],
+    "tool_calls": [
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "What is the penalty for submitting work more than 7 days late?"
+        },
+        "result_summary": "retrieved 3 doc(s): ['policy_late_work.md', 'policy_late_work.md', 'policy_late_work.md']"
+      }
+    ],
+    "decision": "Submissions more than 7 days late result in a grade of 0."
+  },
+  "eval_report": {
+    "groundedness_score": 1.0,
+    "citation_coverage": 0.5,
+    "tool_use_score": 1.0,
+    "notes": "ok"
+  },
+  "run_meta": {
+    "model": "llama3.2:1b",
+    "latency_ms": 1473,
+    "tokens_estimate": null
+  }
+}

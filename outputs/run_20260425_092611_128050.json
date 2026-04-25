@@ -1,0 +1,41 @@
+{
+  "question": "How do I request a deadline extension?",
+  "final_answer": "To request a deadline extension, email your instructor at least 48-72 hours before the original deadline. Use the subject line `[EXTENSION REQUEST] <Course> <Assignment Name>` and attach documentation if available. State the proposed new deadline in your email.\nSources: policy_extensions.md, policy_extensions.md, policy_extensions.md",
+  "citations": [
+    "policy_extensions.md",
+    "policy_extensions.md",
+    "policy_extensions.md"
+  ],
+  "reasoning_trace": {
+    "plan": [
+      "request a deadline extension",
+      "submit request via email",
+      "attach documentation if available",
+      "state proposed new deadline"
+    ],
+    "assumptions": [
+      "The retrieved context contains the necessary information"
+    ],
+    "tool_calls": [
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "How do I request a deadline extension?"
+        },
+        "result_summary": "retrieved 3 doc(s): ['policy_extensions.md', 'policy_extensions.md', 'policy_extensions.md']"
+      }
+    ],
+    "decision": "Students may request a deadline extension by submitting their request via email at least 24 hours before the original deadline."
+  },
+  "eval_report": {
+    "groundedness_score": 1.0,
+    "citation_coverage": 1.0,
+    "tool_use_score": 1.0,
+    "notes": "ok"
+  },
+  "run_meta": {
+    "model": "llama3.2:1b",
+    "latency_ms": 1799,
+    "tokens_estimate": null
+  }
+}

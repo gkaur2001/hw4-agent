@@ -1,0 +1,39 @@
+{
+  "question": "What should I do if my VPN won't connect?",
+  "final_answer": "Could you please provide more details about what you're looking for?",
+  "citations": [
+    "it_vpn_access.md",
+    "it_vpn_access.md",
+    "it_vpn_access.md"
+  ],
+  "reasoning_trace": {
+    "plan": [
+      "Try restarting your router",
+      "Check your internet connection status"
+    ],
+    "assumptions": [
+      "The retrieved context contains the necessary information"
+    ],
+    "tool_calls": [
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "What should I do if my VPN won't connect?"
+        },
+        "result_summary": "retrieved 3 doc(s): ['it_vpn_access.md', 'it_vpn_access.md', 'it_vpn_access.md']"
+      }
+    ],
+    "decision": "Restart and check your internet connection to troubleshoot the issue."
+  },
+  "eval_report": {
+    "groundedness_score": 1.0,
+    "citation_coverage": 0.5,
+    "tool_use_score": 1.0,
+    "notes": "ok"
+  },
+  "run_meta": {
+    "model": "llama3.2:1b",
+    "latency_ms": 1135,
+    "tokens_estimate": null
+  }
+}

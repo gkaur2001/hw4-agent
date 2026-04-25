@@ -1,0 +1,40 @@
+{
+  "question": "Can I get an extension after the deadline has passed?",
+  "final_answer": "Could you please provide more details about what you're looking for?",
+  "citations": [
+    "policy_extensions.md",
+    "policy_extensions.md",
+    "policy_extensions.md"
+  ],
+  "reasoning_trace": {
+    "plan": [
+      "request an extension",
+      "attach documentation",
+      "state proposed new deadline"
+    ],
+    "assumptions": [
+      "The retrieved context contains the necessary information"
+    ],
+    "tool_calls": [
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "Can I get an extension after the deadline has passed?"
+        },
+        "result_summary": "retrieved 3 doc(s): ['policy_extensions.md', 'policy_extensions.md', 'policy_extensions.md']"
+      }
+    ],
+    "decision": "Extensions are typically granted for up to **48-72 hours** beyond the original deadline."
+  },
+  "eval_report": {
+    "groundedness_score": 1.0,
+    "citation_coverage": 0.5,
+    "tool_use_score": 1.0,
+    "notes": "ok"
+  },
+  "run_meta": {
+    "model": "llama3.2:1b",
+    "latency_ms": 1226,
+    "tokens_estimate": null
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "question": "How do late submissions work?",
+  "final_answer": "Submissions between 1-24 hours late incur a 10% deduction, while submissions between 25-48 hours late incur a 25% deduction. Submissions more than 48 hours late are penalized 50%. The final score is calculated by applying the deduction to the earned score.\n\nSources: [policy_late_work.md]",
+  "citations": [
+    "policy_late_work.md"
+  ],
+  "reasoning_trace": {
+    "plan": [
+      "Review policy_late_work.md for late submission penalties",
+      "Identify relevant sections (Late Submission Penalties, Graded Late Work)",
+      "Apply deduction rules to determine final score"
+    ],
+    "assumptions": [
+      "No additional information is provided beyond the given context"
+    ],
+    "tool_calls": [
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "How do late submissions work?"
+        },
+        "result_summary": "retrieved 3 doc(s): ['policy_late_work.md', 'policy_late_work.md', 'policy_late_work.md']"
+      },
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "Review policy_late_work.md for late submission penalties"
+        },
+        "result_summary": "step 'Review policy_late_work.md for late submission pen': 2 new chunk(s) from ['policy_late_work.md', 'policy_late_work.md']"
+      },
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "Identify relevant sections (Late Submission Penalties, Graded Late Work)"
+        },
+        "result_summary": "step 'Identify relevant sections (Late Submission Penalt': 0 new chunk(s) from []"
+      },
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "Apply deduction rules to determine final score"
+        },
+        "result_summary": "step 'Apply deduction rules to determine final score': 0 new chunk(s) from []"
+      }
+    ],
+    "decision": "The policy for late submissions involves a tiered system of deductions based on the time elapsed since the deadline, with a 15-minute grace period applying to all deadlines."
+  },
+  "eval_report": {
+    "groundedness_score": 1.0,
+    "citation_coverage": 1.0,
+    "tool_use_score": 1.0,
+    "notes": "ok",
+    "llm_judge_factuality": 0.8,
+    "llm_judge_relevance": 1.0,
+    "llm_judge_citation": 1.0,
+    "llm_judge_overall": 0.9333,
+    "llm_judge_reasoning": "The assistant accurately summarized the late submission penalties, but slightly misstated the deduction for submissions between 1-24 hours late as '10% deduction' instead of 'up to 10% deduction'."
+  },
+  "run_meta": {
+    "model": "llama3.1:8b",
+    "latency_ms": 16092,
+    "tokens_estimate": null
+  }
+}

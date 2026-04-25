@@ -1,0 +1,40 @@
+{
+  "question": "Can I use ChatGPT for my homework?",
+  "final_answer": "Could you please provide more details about what you're looking for?",
+  "citations": [
+    "policy_academic_integrity.md",
+    "policy_academic_integrity.md",
+    "it_canvas_access.md"
+  ],
+  "reasoning_trace": {
+    "plan": [
+      "Can I use ChatGPT for my homework?",
+      "ChatGPT can be used for learning and debugging, but it must be disclosed in a brief note at the end of the submission."
+    ],
+    "assumptions": [
+      "ChatGPT is an AI tool",
+      "AI-generated content submitted as own analysis or report writing is not permitted"
+    ],
+    "tool_calls": [
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "Can I use ChatGPT for my homework?"
+        },
+        "result_summary": "retrieved 3 doc(s): ['policy_academic_integrity.md', 'policy_academic_integrity.md', 'it_canvas_access.md']"
+      }
+    ],
+    "decision": "It is generally acceptable to use ChatGPT for homework, but it must be used in a way that does not submit your own work."
+  },
+  "eval_report": {
+    "groundedness_score": 1.0,
+    "citation_coverage": 0.5,
+    "tool_use_score": 1.0,
+    "notes": "ok"
+  },
+  "run_meta": {
+    "model": "llama3.2:1b",
+    "latency_ms": 2374,
+    "tokens_estimate": null
+  }
+}

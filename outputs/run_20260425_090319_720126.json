@@ -1,0 +1,41 @@
+{
+  "question": "What qualifies as a reason for an extension?",
+  "final_answer": "Could you please provide more details about what you're looking for?",
+  "citations": [
+    "policy_extensions.md",
+    "policy_extensions.md",
+    "policy_extensions.md"
+  ],
+  "reasoning_trace": {
+    "plan": [
+      "request a deadline extension",
+      "check with instructor for approval",
+      "submit new request"
+    ],
+    "assumptions": [
+      "is the student hospitalized?",
+      "does the student have a valid reason for requesting an extension"
+    ],
+    "tool_calls": [
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "What qualifies as a reason for an extension?"
+        },
+        "result_summary": "retrieved 3 doc(s): ['policy_extensions.md', 'policy_extensions.md', 'policy_extensions.md']"
+      }
+    ],
+    "decision": "an extension will be granted to the student if they provide a valid medical excuse or other extraordinary circumstance."
+  },
+  "eval_report": {
+    "groundedness_score": 1.0,
+    "citation_coverage": 0.5,
+    "tool_use_score": 1.0,
+    "notes": "ok"
+  },
+  "run_meta": {
+    "model": "llama3.2:1b",
+    "latency_ms": 1605,
+    "tokens_estimate": null
+  }
+}

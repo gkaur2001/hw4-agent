@@ -1,0 +1,38 @@
+{
+  "question": "What happens if I copy code from the internet?",
+  "final_answer": "Could you please provide more details about what you're looking for?",
+  "citations": [
+    "policy_academic_integrity.md",
+    "policy_academic_integrity.md",
+    "policy_late_work.md"
+  ],
+  "reasoning_trace": {
+    "plan": [
+      "copying code from the internet is not permitted"
+    ],
+    "assumptions": [
+      "The retrieved context contains the necessary information"
+    ],
+    "tool_calls": [
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "What happens if I copy code from the internet?"
+        },
+        "result_summary": "retrieved 3 doc(s): ['policy_academic_integrity.md', 'policy_academic_integrity.md', 'policy_late_work.md']"
+      }
+    ],
+    "decision": "Plagiarism in written reports is a violation of academic integrity."
+  },
+  "eval_report": {
+    "groundedness_score": 1.0,
+    "citation_coverage": 0.5,
+    "tool_use_score": 1.0,
+    "notes": "ok"
+  },
+  "run_meta": {
+    "model": "llama3.2:1b",
+    "latency_ms": 1190,
+    "tokens_estimate": null
+  }
+}

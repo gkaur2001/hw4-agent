@@ -1,0 +1,39 @@
+{
+  "question": "Can I work with a classmate on homework?",
+  "final_answer": "Could you please provide more details about what you're looking for?",
+  "citations": [
+    "policy_academic_integrity.md",
+    "policy_late_work.md",
+    "policy_academic_integrity.md"
+  ],
+  "reasoning_trace": {
+    "plan": [
+      "Can I work with a classmate on homework?",
+      "Discussing ideas is fine; sharing code or written answers is not"
+    ],
+    "assumptions": [
+      "The retrieved context contains the necessary information"
+    ],
+    "tool_calls": [
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "Can I work with a classmate on homework?"
+        },
+        "result_summary": "retrieved 3 doc(s): ['policy_academic_integrity.md', 'policy_late_work.md', 'policy_academic_integrity.md']"
+      }
+    ],
+    "decision": "It is generally acceptable to collaborate with a classmate on homework, but ensure that any shared work does not involve the submission of AI-generated content as your own analysis or report writing."
+  },
+  "eval_report": {
+    "groundedness_score": 1.0,
+    "citation_coverage": 0.5,
+    "tool_use_score": 1.0,
+    "notes": "ok"
+  },
+  "run_meta": {
+    "model": "llama3.2:1b",
+    "latency_ms": 1851,
+    "tokens_estimate": null
+  }
+}

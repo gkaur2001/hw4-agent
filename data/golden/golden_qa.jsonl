@@ -1,0 +1,15 @@
+{"id": "q01", "question": "Can I submit homework late?", "expected_citations": ["policy_late_work.md"], "expected_keywords": ["late", "penalty", "deduction"], "notes": "basic late policy lookup"}
+{"id": "q02", "question": "What is the penalty for submitting an assignment 36 hours late?", "expected_citations": ["policy_late_work.md"], "expected_keywords": ["25%", "deduction"], "notes": "specific penalty bracket"}
+{"id": "q03", "question": "Is there a grace period for deadlines?", "expected_citations": ["policy_late_work.md"], "expected_keywords": ["15", "grace"], "notes": "grace period detail"}
+{"id": "q04", "question": "How do I request a deadline extension?", "expected_citations": ["policy_extensions.md"], "expected_keywords": ["email", "24 hours", "before"], "notes": "extension request steps"}
+{"id": "q05", "question": "Can I get an extension after the deadline has passed?", "expected_citations": ["policy_extensions.md"], "expected_keywords": ["retroactive", "not granted"], "notes": "retroactive extension"}
+{"id": "q06", "question": "What qualifies as a reason for an extension?", "expected_citations": ["policy_extensions.md"], "expected_keywords": ["medical", "emergency", "accommodation"], "notes": "qualifying circumstances"}
+{"id": "q07", "question": "Can I use ChatGPT for my homework?", "expected_citations": ["policy_academic_integrity.md"], "expected_keywords": ["AI", "disclose", "permitted"], "notes": "AI tool use policy"}
+{"id": "q08", "question": "What happens if I copy code from the internet?", "expected_citations": ["policy_academic_integrity.md"], "expected_keywords": ["violation", "attribution", "plagiarism"], "notes": "academic integrity violation"}
+{"id": "q09", "question": "Can I work with a classmate on homework?", "expected_citations": ["policy_academic_integrity.md"], "expected_keywords": ["individual", "collaboration", "sharing"], "notes": "collaboration policy"}
+{"id": "q10", "question": "How do I install the VPN?", "expected_citations": ["it_vpn_access.md"], "expected_keywords": ["Cisco", "AnyConnect", "download"], "notes": "VPN install steps"}
+{"id": "q11", "question": "What should I do if my VPN won't connect?", "expected_citations": ["it_vpn_access.md"], "expected_keywords": ["vpn.jhu.edu", "DUO", "connection"], "notes": "VPN troubleshooting"}
+{"id": "q12", "question": "How do I access Canvas?", "expected_citations": ["it_canvas_access.md"], "expected_keywords": ["canvas.jhu.edu", "JHED", "login"], "notes": "Canvas access"}
+{"id": "q13", "question": "My course is not showing up in Canvas, what should I do?", "expected_citations": ["it_canvas_access.md"], "expected_keywords": ["24 hours", "enrollment", "SIS"], "notes": "Canvas course missing"}
+{"id": "q14", "question": "What is the penalty for submitting work more than 7 days late?", "expected_citations": ["policy_late_work.md"], "expected_keywords": ["not accepted", "zero", "7 days"], "notes": "maximum late penalty"}
+{"id": "q15", "question": "Who should I contact about a VPN problem?", "expected_citations": ["it_vpn_access.md"], "expected_keywords": ["IT Help Desk", "help@jhu.edu", "410-516"], "notes": "IT contact info"}

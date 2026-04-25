@@ -1,0 +1,39 @@
+{
+  "question": "How do late submissions work?",
+  "final_answer": "Could you please provide more details about what you're looking for?",
+  "citations": [
+    "policy_late_work.md",
+    "policy_late_work.md",
+    "policy_late_work.md"
+  ],
+  "reasoning_trace": {
+    "plan": [
+      "Late submissions have a penalty system with deductions based on the number of hours late.",
+      "Late work is graded normally after being accepted, and a deduction applies for excessive lateness."
+    ],
+    "assumptions": [
+      "The retrieved context contains the necessary information"
+    ],
+    "tool_calls": [
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "How do late submissions work?"
+        },
+        "result_summary": "retrieved 3 doc(s): ['policy_late_work.md', 'policy_late_work.md', 'policy_late_work.md']"
+      }
+    ],
+    "decision": "Late submissions incur penalties based on the time elapsed since submission."
+  },
+  "eval_report": {
+    "groundedness_score": 1.0,
+    "citation_coverage": 0.5,
+    "tool_use_score": 1.0,
+    "notes": "ok"
+  },
+  "run_meta": {
+    "model": "llama3.2:1b",
+    "latency_ms": 14469,
+    "tokens_estimate": null
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "question": "Is there a grace period for deadlines?",
+  "final_answer": "Is there a specific exception or circumstance that would warrant an extension beyond the standard 48-72 hour window?",
+  "citations": [
+    "policy_late_work.md",
+    "policy_extensions.md",
+    "policy_extensions.md"
+  ],
+  "reasoning_trace": {
+    "plan": [
+      "check deadlines",
+      "review extension policies"
+    ],
+    "assumptions": [
+      "are there any exceptions to the deadline extensions?",
+      "is a grace period applicable for all deadlines?"
+    ],
+    "tool_calls": [
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "Is there a grace period for deadlines?"
+        },
+        "result_summary": "retrieved 3 doc(s): ['policy_late_work.md', 'policy_extensions.md', 'policy_extensions.md']"
+      }
+    ],
+    "decision": "Extensions are typically granted within 48-72 hours of the original deadline, but may be denied if the instructor deems it necessary."
+  },
+  "eval_report": {
+    "groundedness_score": 1.0,
+    "citation_coverage": 0.5,
+    "tool_use_score": 1.0,
+    "notes": "ok"
+  },
+  "run_meta": {
+    "model": "llama3.2:1b",
+    "latency_ms": 2029,
+    "tokens_estimate": null
+  }
+}

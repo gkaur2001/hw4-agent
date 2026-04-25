@@ -1,0 +1,65 @@
+{
+  "question": "My course is not showing up in Canvas, what should I do?",
+  "final_answer": "To resolve the issue, first check your enrollment status by visiting SIS (https://sis.jhu.edu). If you're enrolled, confirm that the course is not hidden or restricted in Canvas. If the wait exceeds 48 hours and the course still doesn't appear, contact your instructor for assistance.",
+  "citations": [
+    "it_canvas_access.md",
+    "policy_late_work.md"
+  ],
+  "reasoning_trace": {
+    "plan": [
+      "Check if your enrollment has been processed by SIS (https://sis.jhu.edu)",
+      "Verify that the course is not hidden or restricted in Canvas",
+      "Contact your instructor if the issue persists after 48 hours"
+    ],
+    "assumptions": [
+      "The student is enrolled in the course"
+    ],
+    "tool_calls": [
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "My course is not showing up in Canvas, what should I do?"
+        },
+        "result_summary": "retrieved 3 doc(s): ['it_canvas_access.md', 'it_canvas_access.md', 'policy_late_work.md']"
+      },
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "Check if your enrollment has been processed by SIS (https://sis.jhu.edu)"
+        },
+        "result_summary": "step 'Check if your enrollment has been processed by SIS': 1 new chunk(s) from ['it_canvas_access.md']"
+      },
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "Verify that the course is not hidden or restricted in Canvas"
+        },
+        "result_summary": "step 'Verify that the course is not hidden or restricted': 0 new chunk(s) from []"
+      },
+      {
+        "tool": "vector_retriever",
+        "args": {
+          "query": "Contact your instructor if the issue persists after 48 hours"
+        },
+        "result_summary": "step 'Contact your instructor if the issue persists afte': 1 new chunk(s) from ['policy_late_work.md']"
+      }
+    ],
+    "decision": "Check SIS and contact your instructor if the wait exceeds 48 hours, as new enrollments can take up to 24 hours to appear in Canvas."
+  },
+  "eval_report": {
+    "groundedness_score": 1.0,
+    "citation_coverage": 0.5,
+    "tool_use_score": 1.0,
+    "notes": "ok",
+    "llm_judge_factuality": 0.8,
+    "llm_judge_relevance": 1.0,
+    "llm_judge_citation": 0.6,
+    "llm_judge_overall": 0.8,
+    "llm_judge_reasoning": "The assistant's answer is mostly factually accurate, but it doesn't fully address the issue of a missing course in Canvas. It correctly suggests checking enrollment status and contacting the instructor if necessary, but doesn't mention the 24-hour wait time for new enrollments or the possibility of manual addition by instructors."
+  },
+  "run_meta": {
+    "model": "llama3.1:8b",
+    "latency_ms": 7944,
+    "tokens_estimate": null
+  }
+}
