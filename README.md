@@ -1,4 +1,4 @@
-# hw4-starter-agent — Policy/Procedure Helpdesk (LangGraph)
+# hw4-agent — Policy/Procedure Helpdesk (LangGraph)
 
 > **Report:** See [`report.md`](report.md) for the written submission covering design choices, observations, and example runs.
 
