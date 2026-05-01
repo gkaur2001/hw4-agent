@@ -38,17 +38,21 @@ ollama pull llama3.1:8b
 ### 3. Install dependencies
 
 ```bash
-cd hw4-starter-agent
+cd hw4-agent
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 4. Configure
+### 4. Configure (optional)
+
+All settings have sensible defaults. To override, create a `.env` file:
 
 ```bash
-cp .env.example .env
-# Edit MODEL_NAME in .env to match the model you pulled
+MODEL_NAME=llama3.1:8b       # default: llama3.1
+OLLAMA_BASE_URL=http://localhost:11434
+TEMPERATURE=0.0
+MAX_RETRIEVED_DOCS=3
 ```
 
 ### 5. Ingest the knowledge base
@@ -86,11 +90,9 @@ python run.py --eval
 
 ## Graph flow
 
-```
-retrieve → reason → execute_plan → answer → evaluate → finalize
-                 ↘ (needs_clarification) ↗
-                         finalize
-```
+![LangGraph agent graph](graph.png)
+
+Dashed edges out of `reason` represent the conditional clarification branch (routes directly to `finalize`, skipping `execute_plan`, `answer`, and `evaluate`).
 
 | Node | Responsibility |
 |------|---------------|
@@ -177,10 +179,11 @@ Each run writes a JSON file to `outputs/run_<timestamp>.json`:
 ## Repo structure
 
 ```
-hw4-starter-agent/
+hw4-agent/
 ├── run.py                          # CLI (single question + offline eval)
 ├── requirements.txt
-├── .env.example
+├── graph.png                       # LangGraph compiled graph (generated)
+├── report.md                       # Written submission
 ├── app/
 │   ├── config.py                   # Settings (from .env)
 │   ├── state.py                    # GraphState TypedDict
@@ -196,7 +199,7 @@ hw4-starter-agent/
 │   ├── tools/
 │   │   ├── local_retriever.py      # Keyword overlap fallback retriever
 │   │   ├── vector_retriever.py     # ChromaDB semantic retriever (Part A)
-│   │   └── web_search_stub.py      # Web search stub (not implemented)
+│   │   └── web_search_stub.py      # Web search stub (unused)
 │   └── eval/
 │       ├── metrics.py              # Heuristic metrics + LLM-as-judge (Part C)
 │       └── online.py               # Online eval orchestration
